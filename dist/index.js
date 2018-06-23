@@ -43,7 +43,7 @@ var SwipeoutBtn = (0, _createReactClass2.default)({
     color: _propTypes2.default.string,
     component: _propTypes2.default.node,
     onPress: _propTypes2.default.func,
-    text: _propTypes2.default.string,
+    text: _propTypes2.default.node,
     type: _propTypes2.default.string,
     underlayColor: _propTypes2.default.string
   },
@@ -401,7 +401,7 @@ var Swipeout = (0, _createReactClass2.default)({
     };
     var styleContentPos = {
       content: {
-        left: this._rubberBandEasing(posX, limit)
+        transform: [{ translateX: this._rubberBandEasing(posX, limit) }]
       }
     };
 
